@@ -2,13 +2,15 @@
 
 The organization website for [sec4si](https://github.com/sec4si), published at **https://sec4.si/** through GitHub Pages.
 
-This repository starts with a responsive, buildless placeholder. No package installation or build step is required.
+This repository contains the compiled static landing page for **Security for SI**, covering LLMs, inference infrastructure, agents, and the wider AI ecosystem. It uses the licensed ReactBits Pro Typographic Wall as an interactive background.
 
 ## Edit and publish
 
-Edit `index.html` and any assets, then commit to `main`. GitHub Pages publishes from the repository root on `main`.
+GitHub Pages publishes from the repository root on `main`. The development project is maintained privately because the ReactBits Pro license restricts distribution of component source. Build the private project and copy its static output into this repository, then commit to `main` after reviewing the preview.
 
-- `index.html`: homepage and styles
+- `index.html`: compiled homepage entry
+- `assets/`: fingerprinted CSS, minified JavaScript, and local fonts
+- `licenses/`: third-party font and runtime notices
 - `favicon.svg`: site icon
 - `CNAME`: custom domain (`sec4.si`); keep this when replacing the placeholder
 - `.nojekyll`: serves files directly without Jekyll
@@ -25,4 +27,4 @@ GitHub Pages manages the certificate for `sec4.si` and `www.sec4.si`, with HTTPS
 
 ## Local preview
 
-Serve this directory with any static HTTP server. Relative file structure and the `CNAME` can be preserved when adding a static site generator later.
+Serve this repository with any static HTTP server to preview the production output. The private development project also provides a loopback-only preview server and build scripts. Do not publish licensed component source, source maps, or development archives in this public repository.
