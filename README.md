@@ -27,14 +27,15 @@ GitHub Pages manages the certificate for `sec4.si` and `www.sec4.si`, with HTTPS
 
 ## Projects
 
-The homepage's research list includes Benchmark and Lens, each with links to its website and repository. The Projects navigation goes to `/#projects`; `/#benchmark` and `/#lens` open the corresponding project directly. Accordion selection is reflected in the URL without adding history entries, so reloads and navigation back restore the selected row.
+The homepage's research list includes Benchmark, Lens, and Infer, each with links to its website and repository. The Projects navigation goes to `/#projects`; `/#benchmark`, `/#lens`, and `/#infer` open the corresponding project directly. Accordion selection is reflected in the URL without adding history entries, so reloads and navigation back restore the selected row.
 
 | Project | Website | Repository |
 | --- | --- | --- |
 | Benchmark | https://benchmark.sec4.si/ | https://github.com/sec4si/benchmark |
 | Lens | https://lens.sec4.si/ | https://github.com/sec4si/lens |
+| Infer | https://infer.sec4.si/ | https://github.com/sec4si/infer |
 
-Both subdomains use DNS-only CNAME records pointing to `sec4si.github.io`. Each project publishes through its own GitHub Actions workflow, with HTTPS enforced.
+The project subdomains use DNS-only CNAME records pointing to `sec4si.github.io`. Each project publishes through its own GitHub Actions workflow, with HTTPS enforced.
 
 ## Local preview
 
