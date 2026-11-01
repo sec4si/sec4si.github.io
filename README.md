@@ -9,6 +9,7 @@ This repository contains the compiled static landing page for **Security for SI*
 GitHub Pages publishes from the repository root on `main`. The development project is maintained privately because the ReactBits Pro license restricts distribution of component source. Build the private project and copy its static output into this repository, then commit to `main` after reviewing the preview.
 
 - `index.html`: compiled homepage entry
+- `release.json`: current fingerprinted JavaScript and CSS entry points
 - `assets/`: fingerprinted CSS, minified JavaScript, and local fonts
 - `licenses/`: third-party font and runtime notices
 - `favicon.svg`: site icon
@@ -24,6 +25,12 @@ The apex domain uses the four GitHub Pages A records and four AAAA records. `www
 The organization has verified ownership of `sec4.si` through a `_github-pages-challenge-sec4si` TXT record. Keep that record in Cloudflare after verification.
 
 GitHub Pages manages the certificate for `sec4.si` and `www.sec4.si`, with HTTPS enforced.
+
+## Homepage updates and caching
+
+GitHub Pages serves HTML with a ten-minute cache lifetime. The homepage bootstrap reads `release.json` on each page load with browser caching disabled and a fresh query string, then loads the current fingerprinted JavaScript and matching CSS. A cached homepage can therefore use the latest published app after it has received this bootstrap once. Normal reloads check for updates; no refresh loop or service worker is used.
+
+If the release file is unavailable, invalid, or times out, the page uses the assets embedded in its HTML. Missing release styles or scripts also fall back to those assets. Keep previous fingerprinted assets when copying a new build so existing cached documents remain usable. Publish HTML, the bootstrap, `release.json`, and the referenced assets together in one commit.
 
 ## Projects
 
