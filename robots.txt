@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sec4.si/sitemap.xml

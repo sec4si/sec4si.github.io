@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#090c09"><meta name="description" content="sec4.si 是谁、我们做什么，以及围绕 LLM、推理基础设施、Agent 和 AI 生态展开的安全研究。"><meta property="og:title" content="README.md — sec4.si"><meta property="og:description" content="sec4.si 是谁、我们做什么，以及围绕 LLM、推理基础设施、Agent 和 AI 生态展开的安全研究。"><meta property="og:type" content="article"><meta property="og:url" content="https://sec4.si/articles/readme/"><link rel="canonical" href="https://sec4.si/articles/readme/"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/assets/main-XGNGND4Q.css"><link rel="stylesheet" href="/assets/articles-XRSMCOFQ.css"><title>README.md — sec4.si</title><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"README.md","description":"sec4.si 是谁、我们做什么，以及围绕 LLM、推理基础设施、Agent 和 AI 生态展开的安全研究。","datePublished":"2026-11-02","inLanguage":"zh-CN","author":{"@type":"Organization","name":"sec4si","url":"https://sec4.si/"},"publisher":{"@type":"Organization","name":"sec4si","url":"https://sec4.si/"},"mainEntityOfPage":"https://sec4.si/articles/readme/"}</script></head>
+<body class="articles-page" id="top"><a class="skip-link" href="#main">跳到正文</a>
+<header class="site-header is-scrolled"><a class="brand" href="/" aria-label="sec4.si home"><svg width="31" height="31" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 5v22h7M28 5v22h-7"/><path class="mark-slash" d="m19 6-6 20"/></svg><span>sec4<span class="brand-dot">.</span>si</span></a><span class="header-caption mono">SECURITY FOR SI</span>
+<nav aria-label="Main navigation"><a href="/articles/" aria-current="location"><span class="nav-number">01</span> Articles</a><a class="projects-nav" href="/#projects"><span class="nav-number">02</span> Projects</a><a class="approach-nav" href="/#approach"><span class="nav-number">03</span> Approach</a><a class="github-nav" href="https://github.com/sec4si" aria-label="sec4si on GitHub"><span class="github-label">GitHub</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></nav></header><main id="main" tabindex="-1"><article aria-labelledby="article-title"><header class="article-hero page-gutter"><nav class="article-breadcrumb mono" aria-label="Breadcrumb"><a href="/">SEC4.SI</a><span aria-hidden="true">/</span><a href="/articles/">ARTICLES</a><span aria-hidden="true">/</span><span aria-current="page">README.md</span></nav><p class="article-category mono"><span class="square-dot" aria-hidden="true"></span>团队介绍 / SEC4SI</p><h1 id="article-title">README<span>.md</span></h1><p class="article-subtitle">团队业务与研究范围</p><div class="article-meta"><span class="mono">SEC4SI</span><time class="mono" datetime="2026-11-02">2026.11.02</time><span class="mono">约 3 分钟</span></div></header><div class="article-reading page-gutter"><div class="article-layout"><aside class="article-sidebar"><nav class="article-toc" aria-label="文章目录"><p class="mono">ON THIS PAGE / 目录</p><ol><li><a href="#%E6%88%91%E4%BB%AC%E6%98%AF%E8%B0%81">我们是谁</a></li><li><a href="#%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88">我们做什么</a></li><li><a href="#%E7%A0%94%E7%A9%B6%E8%8C%83%E5%9B%B4">研究范围</a></li><li><a href="#%E7%A0%94%E7%A9%B6%E6%96%B9%E5%BC%8F">研究方式</a></li><li><a href="#%E9%A1%B9%E7%9B%AE%E4%B8%8E%E5%85%A5%E5%8F%A3">项目与入口</a></li><li><a href="#%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B">从这里开始</a></li></ol><a class="article-back-top mono" href="#top">BACK TO TOP ↑</a></nav></aside><div class="article-prose"><h2 id="我们是谁" aria-label="我们是谁">我们是谁<a class="heading-anchor" href="#%E6%88%91%E4%BB%AC%E6%98%AF%E8%B0%81" aria-label="我们是谁：段落链接">#</a></h2>
+<p>sec4.si，Security for SI。我们是一个关注 AI 及其基础设施安全的研究团队。</p>
+<p>我们研究模型，也研究运行模型、连接模型和使用模型的系统。一个 AI 应用的安全边界，既存在于模型的输入与输出之间，也存在于推理服务、工具调用、权限配置和外部依赖之中。</p>
+<p>当模型开始读取外部数据、调用工具、维护记忆，并对现实系统产生影响，安全问题也会沿着这些连接扩展。我们关心的是这些系统实际如何工作，以及它们在什么条件下会偏离预期。</p>
+<h2 id="我们做什么" aria-label="我们做什么">我们做什么<a class="heading-anchor" href="#%E6%88%91%E4%BB%AC%E5%81%9A%E4%BB%80%E4%B9%88" aria-label="我们做什么：段落链接">#</a></h2>
+<p>我们的工作围绕三个环节展开：发现问题、复现机制、解释边界。</p>
+<ul>
+<li><strong>安全研究与分析。</strong> 从真实系统和具体场景出发，分析模型、基础设施与 Agent 中的攻击面和信任关系。</li>
+<li><strong>实验与验证。</strong> 用可复现的过程检验问题成立的条件，区分模型行为、系统缺陷和配置因素，明确结论的适用范围。</li>
+<li><strong>技术写作与研究工具。</strong> 通过文章、实验代码和项目，把复杂机制讲清楚，让研究过程能够被理解、讨论和继续验证。</li>
+</ul>
+<p>我们希望研究能回答具体的问题：系统接收了什么，如何解释这些输入，最终执行了什么；哪一道边界失效了，又该如何验证它是否被修复。</p>
+<h2 id="研究范围" aria-label="研究范围">研究范围<a class="heading-anchor" href="#%E7%A0%94%E7%A9%B6%E8%8C%83%E5%9B%B4" aria-label="研究范围：段落链接">#</a></h2>
+<h3 id="llm-模型层" aria-label="LLM：模型层">LLM：模型层<a class="heading-anchor" href="#llm-%E6%A8%A1%E5%9E%8B%E5%B1%82" aria-label="LLM：模型层：段落链接">#</a></h3>
+<p>研究模型行为、对抗性输入，以及指令与数据之间的边界。关注提示注入、越狱、模型对上下文的解释，以及安全约束在具体任务中的表现。</p>
+<p>我们也关注可解释性：理解模型内部的特征与计算过程，为分析行为和安全问题提供更多依据。</p>
+<h3 id="inference-基础设施层" aria-label="Inference：基础设施层">Inference：基础设施层<a class="heading-anchor" href="#inference-%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%B1%82" aria-label="Inference：基础设施层：段落链接">#</a></h3>
+<p>研究承载模型的推理引擎、服务框架和运行环境。关注请求处理、协议与格式解析、资源隔离、多租户场景，以及模型服务与其他基础设施之间的接口。</p>
+<p>模型输出如何变成一个响应，数据经过哪些组件，组件之间依赖什么假设，都是这一层的问题。</p>
+<h3 id="agent-行动层" aria-label="Agent：行动层">Agent：行动层<a class="heading-anchor" href="#agent-%E8%A1%8C%E5%8A%A8%E5%B1%82" aria-label="Agent：行动层：段落链接">#</a></h3>
+<p>研究工具调用、记忆、状态、权限，以及 Agent 从意图走向实际执行时的信任边界。</p>
+<p>外部网页、文件、检索结果或工具响应，可能被带入后续决策。我们关注这些信息如何影响 Agent，操作权限如何被约束，以及一次错误的解释如何沿着执行链传递。</p>
+<h3 id="ecosystem-生态层" aria-label="Ecosystem：生态层">Ecosystem：生态层<a class="heading-anchor" href="#ecosystem-%E7%94%9F%E6%80%81%E5%B1%82" aria-label="Ecosystem：生态层：段落链接">#</a></h3>
+<p>研究 AI 系统连接的模型、数据、依赖、插件、连接器与供应链。关注集成方式和默认配置带来的风险，以及单个组件中的问题如何影响整个系统。</p>
+<p>很多安全问题发生在组件交接的地方。我们会沿着数据、控制与行动的路径，研究这些接口及其背后的信任关系。</p>
+<h2 id="研究方式" aria-label="研究方式">研究方式<a class="heading-anchor" href="#%E7%A0%94%E7%A9%B6%E6%96%B9%E5%BC%8F" aria-label="研究方式：段落链接">#</a></h2>
+<p><strong>Observe.</strong> 先理解实际行为。阅读实现，观察输入与输出，梳理数据和控制流，确认系统真正依赖的假设。</p>
+<p><strong>Reproduce.</strong> 再让结论可检验。记录环境、条件、步骤与限制，用实验说明问题何时成立，以及哪些变化会影响结果。</p>
+<p><strong>Explain.</strong> 最后把机制讲清楚。文章应说明现象背后的原因；实验中的示意、假设与实测结果，应当有清楚的区别。</p>
+<p>我们从具体问题出发，逐步建立对系统的理解。结论需要证据，也需要保留它的边界。</p>
+<h2 id="项目与入口" aria-label="项目与入口">项目与入口<a class="heading-anchor" href="#%E9%A1%B9%E7%9B%AE%E4%B8%8E%E5%85%A5%E5%8F%A3" aria-label="项目与入口：段落链接">#</a></h2>
+<p>sec4.si 是团队的主页，也是研究内容与项目的共同入口。</p>
+<ul>
+<li><strong><a href="https://benchmark.sec4.si/">Benchmark</a></strong>：Benchmark 项目站点，相关内容与代码通过 <a href="https://github.com/sec4si/benchmark">Benchmark 仓库</a>更新。</li>
+<li><strong><a href="https://lens.sec4.si/">Lens</a></strong>：可解释性研究站点，通过交互式讲解与研究文章探索模型内部的工作方式。<a href="https://github.com/sec4si/lens">Lens 仓库</a>。</li>
+<li><strong><a href="https://infer.sec4.si/">Infer</a></strong>：Infer 项目站点，相关内容与代码通过 <a href="https://github.com/sec4si/infer">Infer 仓库</a>更新。</li>
+</ul>
+<p>各项目的具体内容与进展，以对应站点和仓库的公开更新为准。</p>
+<h2 id="从这里开始" aria-label="从这里开始">从这里开始<a class="heading-anchor" href="#%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B" aria-label="从这里开始：段落链接">#</a></h2>
+<p>这个 Articles 页面用于持续发布团队介绍、研究文章、实验记录和技术分析。README.md 是第一篇，先说明我们研究什么，以及如何开展这些工作。</p>
+<p>你可以从<a href="/articles/">文章列表</a>继续阅读，也可以前往 <a href="https://github.com/sec4si">GitHub 组织</a>查看已公开的仓库与更新。</p>
+<p>从模型到行动，探索智能系统的安全边界。</p>
+<div class="article-end-mark mono" aria-label="文章结束">[ / ]</div><nav class="article-pagination" aria-label="Article navigation"><a class="all-articles" href="/articles/"><span aria-hidden="true">←</span> 返回文章列表</a><a class="markdown-download" href="/articles/readme/README.md" download="README.md">下载 Markdown <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></nav></div></div></div></article></main><footer class="reading-footer page-gutter"><a class="reading-footer-brand" href="/">sec4.si<span class="mono">SECURITY FOR SI</span></a><nav aria-label="Footer navigation"><a href="/articles/">Articles</a><a href="/#projects">Projects</a><a href="https://github.com/sec4si">GitHub <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></nav><span class="mono">© 2026 SEC4SI</span></footer></body></html>

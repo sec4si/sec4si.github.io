@@ -32,6 +32,14 @@ GitHub Pages serves HTML with a ten-minute cache lifetime. The homepage bootstra
 
 If the release file is unavailable, invalid, or times out, the page uses the assets embedded in its HTML. Missing release styles or scripts also fall back to those assets. Keep previous fingerprinted assets when copying a new build so existing cached documents remain usable. Publish HTML, the bootstrap, `release.json`, and the referenced assets together in one commit.
 
+## Articles
+
+The homepage navigation uses **Articles** and opens the dedicated [article listing](https://sec4.si/articles/). The first article, [README.md](https://sec4.si/articles/readme/), introduces the team, its work, the four research layers, and the project ecosystem. Its [Markdown version](https://sec4.si/articles/readme/README.md) is available for download.
+
+The listing and each article are generated as complete static HTML, so direct URLs, refreshes, section links, and reading without JavaScript work on GitHub Pages. They share the homepage's typography, colors, and navigation. `sitemap.xml` and `robots.txt` include the public article routes.
+
+To publish more articles, edit the Markdown content and catalog in the private development project, rebuild, and copy the complete static output here. Licensed component source remains private; the article Markdown is intended to be public.
+
 ## Projects
 
 The homepage's research list includes Benchmark, Lens, and Infer, each with links to its website and repository. The Projects navigation goes to `/#projects`; `/#benchmark`, `/#lens`, and `/#infer` open the corresponding project directly. Accordion selection is reflected in the URL without adding history entries, so reloads and navigation back restore the selected row.
