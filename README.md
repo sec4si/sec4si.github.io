@@ -44,7 +44,7 @@ To publish more articles, edit the Markdown content and catalog in the private d
 
 The **Members** navigation opens the dedicated [members page](https://sec4.si/members/). The homepage contains no member roster. Each member has a locally hosted 20px GitHub avatar and a link to their GitHub profile.
 
-The page explicitly states that display IDs are sorted A–Z, ignoring case: **Processor → SpringKill → Swing → V1ll4n → ZacharyZcR**. It is generated as static HTML and supports direct loading, refresh, and reading without JavaScript. The route is included in `sitemap.xml`.
+The page explicitly states that display IDs are sorted A–Z, ignoring case: **bbznop → Processor → SpringKill → Swing → V1ll4n → ZacharyZcR**. It is generated as static HTML and supports direct loading, refresh, and reading without JavaScript. The route is included in `sitemap.xml`.
 
 ## Projects
 
