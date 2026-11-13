@@ -40,6 +40,12 @@ The listing and each article are generated as complete static HTML, so direct UR
 
 To publish more articles, edit the Markdown content and catalog in the private development project, rebuild, and copy the complete static output here. Licensed component source remains private; the article Markdown is intended to be public.
 
+## Members
+
+The **Members** navigation opens the dedicated [members page](https://sec4.si/members/). The homepage contains no member roster. Each member has a locally hosted 20px GitHub avatar and a link to their GitHub profile.
+
+The page explicitly states that display IDs are sorted A–Z, ignoring case: **Processor → SpringKill → Swing → V1ll4n → ZacharyZcR**. It is generated as static HTML and supports direct loading, refresh, and reading without JavaScript. The route is included in `sitemap.xml`.
+
 ## Projects
 
 The homepage's research list includes Benchmark, Lens, and Infer, each with links to its website and repository. The Projects navigation goes to `/#projects`; `/#benchmark`, `/#lens`, and `/#infer` open the corresponding project directly. Accordion selection is reflected in the URL without adding history entries, so reloads and navigation back restore the selected row.
